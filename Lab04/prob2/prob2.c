@@ -19,6 +19,7 @@ int main(void)
     // if it is not digit, print
     else {
       if(index > 0) {
+        // reset the index if it's not sequence
         number[index] = '\0';
         index = 0;
         printf("%s\n", number);

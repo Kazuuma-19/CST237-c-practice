@@ -45,7 +45,7 @@ int getNumValue(char num[]) {
   // iterate num array
   for(i = 0; num[i] != '\0'; i++) {
     char digit = num[i];
-    // covert char to int, and sum it
+    // covert char to int
     numValue = numValue * 10 + (digit - '0');
   }
   return numValue;
