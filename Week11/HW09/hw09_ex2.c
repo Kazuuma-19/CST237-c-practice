@@ -1,10 +1,11 @@
 # include <stdio.h>
 int calculateFactorial(int num) {
+  if(num == 0) {
+    return 1;
+  }
+  
   if(num < 0) {
     return -1;
-  }
-  else if(num == 0) {
-    return 1;
   }
   else {
     return num * calculateFactorial(num - 1);
